@@ -1,5 +1,4 @@
 # This is a basic workflow that is manually triggered
-
 name: Manual workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
@@ -37,4 +36,7 @@ jobs:
   test:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
+    steps:
+      - name: Ind
+        run: echo "RUNs on $RUNNER_OS machine."
 
